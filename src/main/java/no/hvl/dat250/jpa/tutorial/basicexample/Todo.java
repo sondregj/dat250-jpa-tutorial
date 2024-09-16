@@ -7,9 +7,11 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Todo {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String summary;
     private String description;
 
@@ -23,10 +25,17 @@ public class Todo {
 
     @Override
     public String toString() {
-        return "Todo{" +
-            "id=" + id +
-            ", summary='" + summary + '\'' +
-            ", description='" + description + '\'' +
-            '}';
+        return (
+            "Todo{" +
+            "id=" +
+            id +
+            ", summary='" +
+            summary +
+            '\'' +
+            ", description='" +
+            description +
+            '\'' +
+            '}'
+        );
     }
 }

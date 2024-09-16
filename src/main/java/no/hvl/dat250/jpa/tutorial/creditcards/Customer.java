@@ -1,10 +1,11 @@
 package no.hvl.dat250.jpa.tutorial.creditcards;
 
-import java.util.Collection;
 import jakarta.persistence.*;
+import java.util.Collection;
 
 @Entity
 public class Customer {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
